@@ -1,6 +1,6 @@
 {
-  "name": "@manimfinance/nwjs-download",
-  "version": "1.4.6",
+  "name": "@manim-finance/nwjs-download",
+  "version": "1.0.0",
   "description": "",
   "main": "./lib/index.js",
   "scripts": {
@@ -12,19 +12,22 @@
     "prestart": "npm run build",
     "start": "node ./bin/nwd.js"
   },
+  "publishConfig": {
+    "@manim-finance:registry": "https://npm.pkg.github.com"
+  },
   "bin": {
     "nwd": "./bin/nwd.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evshiron/nwjs-download.git"
+    "url": "git+https://github.com/Manim-Finance/nwjs-download.git"
   },
   "author": "evshiron",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/evshiron/nwjs-download/issues"
+    "url": "https://github.com/Manim-Finance/nwjs-download/issues"
   },
-  "homepage": "https://github.com/evshiron/nwjs-download#readme",
+  "homepage": "https://github.com/Manim-Finance/nwjs-download#readme",
   "dependencies": {
     "babel-runtime": "^6.9.2",
     "commander": "^2.9.0",
