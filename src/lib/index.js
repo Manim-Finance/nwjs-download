@@ -15,7 +15,8 @@ const EXTENSIONS = {
     'linux-ia32': '.tar.gz',
     'linux-x64': '.tar.gz',
     'osx-ia32': '.zip',
-    'osx-x64': '.zip'
+    'osx-x64': '.zip',
+    'osx-arm64': '.zip'
 };
 
 const GetPlatform = (platform) => {
