@@ -55,6 +55,9 @@ const GetArch = (arch) => {
     case 'x64':
         arch = 'x64';
         break;
+    case 'arm64':
+        arch = 'arm64';
+        break;
     default:
         console.warn('WARN_NO_ARCH_SPECIFIED');
         console.warn(`Use ${ process.arch }.`);
@@ -77,7 +80,7 @@ const GetTarget = (platform, arch) => {
     case 'linux':
         return arch == 'x64' ? 'linux-x64' : 'linux-ia32';
     case 'darwin':
-        return arch == 'x64' ? 'osx-x64' : 'osx-ia32';
+        return arch == 'x64' ? 'osx-x64' : 'osx-arm64';
     }
 
 };
